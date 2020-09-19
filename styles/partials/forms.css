@@ -27,6 +27,12 @@
     resize: vertical;
 }
 
+#page-give-classes fieldset legend {
+    font: 700 2.4rem archivo;
+    color: var(--color-text-title);
+    margin-bottom: 2.4rem;
+}
+
 .input-block,
 .textarea-blok {
     position: relative;
