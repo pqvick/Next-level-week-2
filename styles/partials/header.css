@@ -33,6 +33,7 @@
 .page-header .header-content {
     width: 90%;
     margin: 3.2rem auto;
+
     position: relative;
 }
 
@@ -63,6 +64,7 @@
     .page-header .header-content {
         max-width: 740px;
 
+        margin: 0 auto;
         margin: 0 auto;
 
         flex: 1 1;

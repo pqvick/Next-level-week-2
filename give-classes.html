@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 
 </head>
-<body id="page-study">
+<body id="page-give-classes">
 
     <div id="container">
         <header class="page-header">
@@ -41,18 +41,21 @@
                         <label for="name">nome completo</label>
                         <input name="name" id="name" required>
                     </div>
+
                     <div class="input-block">
                         <label for="avatar">link da sua foto <small>(comece com https://)</small></label>
                         <input name="avatar" id="avatar" type="url" required>
                     </div>
+
                     <div class="input-block">
                         <label for="whatsapp">whatsapp <small>(somente números)</small></label>
                         <input name="whatsapp" id="whatsapp" type="number" required>
                     </div>
+
                     <div class="textarea-block">
                         <label for="bio">biografia</label>
                         <textarea name="bio" id="bio" required></textarea>
-                    </div>
+                    </div> 
                     
                 </fieldset>
 
@@ -60,7 +63,7 @@
                     <legend>sobre a aula</legend>
                     <div class="select-block">
                         <label for="subjet">materia</label>
-                        <select name="subject" id="subject">required</select>
+                        <select name="subject" id="subject">required
                             <option value="">selecione uma opição</option>
                             <option value="" disabled="" hidden="">Selecione uma opção</option>
                             <option value="1">Artes</option>
@@ -73,6 +76,7 @@
                             <option value="8">Matemática</option>
                             <option value="9">Português</option>
                             <option value="10">Química</option>
+                        </select>
                     </div>
 
                     <div class="input-blok">
@@ -86,8 +90,35 @@
 
                 <fieldset>
                     <legend>horarios disponíveís
-                        <button id="add-time">+ Novo horário</button>
-                    </legend>
+                        <button id="add-time">+  
+
+                    <div class="schedule-item">
+
+                        <div class="select-block">
+                                <label for="weekday">dia da semana</label>
+                                <select name="weekday[]" id="week">
+                                <option value="" disabled="" hidden="">Selecione uma opção</option>
+                                <option value="0">Domingo</option>
+                                <option value="1">Segunda-feira</option>
+                                <option value="2">Terça-feira</option>
+                                <option value="3">Quarta-feira</option>
+                                <option value="4">Quinta-feira</option>
+                                <option value="5">Sexta-feira</option>
+                                <option value="6">Sábado</option>
+                            </select>
+                        </div>
+
+                            <div class="input-block">
+                                <label for="time_from">das</label>
+                            <input type="text" id="time_from" name="time_from[] required">
+                            </div>
+
+                            <div class="input-block">
+                                <label for="time_to">até</label>
+                            <input type="text" id="time_from" name="time_to[] required">
+                            </div>
+
+                    </div>
 
                     <div class="schedule-item">
 
