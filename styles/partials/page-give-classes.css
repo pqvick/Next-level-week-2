@@ -138,10 +138,10 @@ page-give-classes .page-header .header-content {
         grid-template-columns: 2fr 1fr 1fr;
         column-gap: 1.6rem;
     }
-
-    .shedule-item .input-blok {
+    
+    #page-give-classes #schedule-items .select-blok+.input-blok,
+    #page-give-classes #schedule-items .input-blok+.input-blok,{
         margin-top: 0;
     }
-
 }
 
